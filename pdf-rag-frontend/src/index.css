@@ -1,0 +1,180 @@
+:root {
+  --bg-canvas: #FAF9F7;
+  --bg-sidebar: #F4F3F0;
+  --bg-surface: #FFFFFF;
+  --text-ink: #18181B;
+  --text-secondary: #52525B;
+  --text-tertiary: #71717A;
+  --border-subtle: #ECEBE7;
+  --border-strong: #D4D4D8;
+  --primary: #0F2942;
+}
+
+html, body {
+  background-color: var(--bg-canvas);
+  color: var(--text-ink);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Subtle, natural scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DEDCD5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4C2B9;
+}
+
+/* Editorial Research Memo Typography */
+.research-memo {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #27272A;
+  font-size: 14.5px;
+  line-height: 1.72;
+}
+
+.research-memo h1,
+.research-memo h2 {
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 600;
+  color: #18181B;
+  letter-spacing: -0.015em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.35;
+}
+
+.research-memo h1 {
+  font-size: 1.25rem;
+}
+
+.research-memo h2 {
+  font-size: 1.15rem;
+}
+
+.research-memo h3 {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #52525B;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.research-memo p {
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+  font-size: 14.5px;
+  color: #27272A;
+  line-height: 1.72;
+}
+
+.research-memo strong {
+  color: #18181B;
+  font-weight: 600;
+}
+
+.research-memo em {
+  font-style: italic;
+  color: #3F3F46;
+}
+
+.research-memo ul, 
+.research-memo ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.85rem;
+  padding-left: 1.35rem;
+}
+
+.research-memo ul {
+  list-style-type: disc;
+}
+
+.research-memo ol {
+  list-style-type: decimal;
+}
+
+.research-memo li {
+  margin-bottom: 0.35rem;
+  font-size: 14.5px;
+  color: #27272A;
+  line-height: 1.65;
+}
+
+.research-memo blockquote {
+  border-left: 2px solid #0F2942;
+  padding-left: 0.875rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #52525B;
+}
+
+.research-memo code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8125rem;
+  background-color: #F4F3F0;
+  border: 1px solid #E4E4E7;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  color: #18181B;
+}
+
+.research-memo pre {
+  background-color: #F4F3F0;
+  border: 1px solid #E4E4E7;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8125rem;
+  margin: 1rem 0;
+}
+
+.research-memo pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.research-memo hr {
+  border: none;
+  border-top: 1px solid #ECEBE7;
+  margin: 1.5rem 0;
+}
+
+/* Material symbols vertical alignment */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  vertical-align: middle;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
